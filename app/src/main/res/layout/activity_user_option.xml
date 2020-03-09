@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_option">
+
+    <Button
+        android:id="@+id/profile_image_button_option_menu"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rounded_edittext"
+        android:text="SELECT\nPHOTO"
+        android:textSize="10sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/selectphotoimage_user_option"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:civ_border_width="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_image_button_option_menu"
+        app:layout_constraintEnd_toEndOf="@+id/profile_image_button_option_menu"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/profile_image_button_option_menu"
+        app:layout_constraintTop_toTopOf="@+id/profile_image_button_option_menu"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/username_option_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="Username"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image_button_option_menu" />
+
+    <TextView
+        android:id="@+id/user_email_option_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Email"
+        app:layout_constraintStart_toStartOf="@+id/username_option_menu"
+        app:layout_constraintTop_toBottomOf="@+id/username_option_menu" />
+
+    <Button
+        android:id="@+id/save_settings_option_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image_button_option_menu" />
+
+    <Button
+        android:id="@+id/update_log_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="update Log.d"
+        app:layout_constraintEnd_toEndOf="@+id/save_settings_option_menu"
+        app:layout_constraintStart_toStartOf="@+id/save_settings_option_menu"
+        app:layout_constraintTop_toBottomOf="@+id/save_settings_option_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
